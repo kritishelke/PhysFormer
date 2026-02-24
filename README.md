@@ -25,13 +25,12 @@ This repo can:
 From the repo root:
 
 ```bash
-cd physformer
 pip install -r requirements.txt
 ```
 
 ### Running training
 
-From inside the `physformer` directory (repo root for this scaffold):
+From the same repo root:
 
 ```bash
 python train.py --model lstm --epochs 2

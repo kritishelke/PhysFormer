@@ -33,7 +33,7 @@ class WindowDataset(Dataset):
             T, _ = traj.shape
             window_size = hist_len + horizon
             max_start = T - window_size
-            if max_start <= 0:
+            if max_start < 0:
                 continue
             for start in range(0, max_start + 1, stride):
                 self.indices.append((traj_idx, start))

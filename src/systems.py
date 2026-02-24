@@ -148,4 +148,3 @@ def generate_lorenz_dataset(
         trajectories.append(traj.astype(np.float32))
 
     return trajectories, dt
-
